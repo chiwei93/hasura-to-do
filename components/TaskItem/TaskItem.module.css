@@ -1,0 +1,23 @@
+.task {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.list > li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .task {
+    padding: 2.5rem;
+  }
+}

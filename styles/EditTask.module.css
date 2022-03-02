@@ -1,0 +1,44 @@
+.form {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.inputContainer label {
+  margin-bottom: 0.5rem;
+}
+
+.inputContainer input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid var(--color-black);
+  transition: border-color 0.2s;
+  border-radius: var(--border-radius);
+}
+
+.inputContainer input:focus {
+  border-color: var(--color-secondary);
+}
+
+.inputContainer p {
+  margin-top: 0.5rem;
+  color: var(--color-red);
+}
+
+@media only screen and (min-width: 600px) {
+  .form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

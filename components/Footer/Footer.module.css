@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--color-primary);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+}
+
+.navList li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.navLink {
+  color: var(--color-white);
+  transition: color 0.2s;
+}
+
+.navLink:hover,
+.navLink:active {
+  color: var(--color-secondary);
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    padding: 2.5rem;
+  }
+
+  .navList li:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
